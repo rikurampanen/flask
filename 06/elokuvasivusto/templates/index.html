@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elokuvasivusto</title>
+</head>
+
+<body>
+
+    <h1>Elokuvasivusto</h1>
+
+    <p>Tervetuloa elokuvien maailmaan!</p>
+
+    <h2>Elokuvat</h2>
+
+    {% for elokuva in elokuvat %}
+
+        <h3>
+            <a href="/elokuva/{{ elokuva.nimi }}">
+                {{ elokuva.nimi }}
+            </a>
+        </h3>
+
+        <p>Julkaisuvuosi: {{ elokuva.vuosi }}</p>
+
+        <p>Genre: {{ elokuva.genre }}</p>
+
+        <p>Arvosana: {{ elokuva.arvosana }}</p>
+
+        <hr>
+
+    {% endfor %}
+
+</body>
+
+</html>

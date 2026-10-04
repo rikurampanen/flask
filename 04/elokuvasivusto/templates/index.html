@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elokuvasivusto</title>
+</head>
+
+<body>
+
+    <h1>Elokuvasivusto</h1>
+
+    <p>Tervetuloa elokuvien maailmaan!</p>
+
+    <h2>Elokuvat</h2>
+
+    {% for elokuva in elokuvat %}
+
+        <p>{{ elokuva }}</p>
+
+    {% endfor %}
+
+</body>
+
+</html>
