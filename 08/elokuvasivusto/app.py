@@ -5,24 +5,25 @@ app = Flask(__name__)
 
 elokuvat = [
     {
+        "id": 1,
         "nimi": "Inception",
         "vuosi": 2010,
         "genre": "Sci-fi",
-        "arvosana": 8.8
+        "arvosana": 8.8 
     },
-    {
+    {   "id": 2,
         "nimi": "The Dark Knight",
         "vuosi": 2008,
         "genre": "Toiminta",
-        "arvosana": 9.0
+        "arvosana": 9.0 
     },
-    {
+    {   "id": 3,
         "nimi": "Interstellar",
         "vuosi": 2014,
         "genre": "Sci-fi",
         "arvosana": 8.7
     },
-    {
+    {   "id": 4,
         "nimi": "The Matrix",
         "vuosi": 1999,
         "genre": "Sci-fi",
@@ -45,7 +46,7 @@ def elokuva(nimi):
 
     for elokuva in elokuvat:
 
-        if elokuva["nimi"] == nimi:
+        if elokuva["id"] == id:
 
             return render_template(
                 "elokuva.html",
