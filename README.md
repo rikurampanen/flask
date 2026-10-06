@@ -181,18 +181,25 @@ Opitaan:
 
 **[Siirry vaiheeseen 06](06/README.md)**
 
-## 07 – Datan keskittäminen
+## 07 – Elokuville yksilöllinen tunniste
 
-Elokuvadatan hallintaa selkeytetään.
+Jokaiselle elokuvalle lisätään yksilöllinen id.
 
-Sama elokuvalista toimii sekä:
+Aikaisemmin yksittäinen elokuva haettiin nimen perusteella. Nyt elokuva haetaan sen tunnisteen avulla:
 
-- etusivulla
-- yksittäisen elokuvan sivulla
+```text
+/elokuva/1
+/elokuva/2
+/elokuva/3
+```
 
-Opitaan, miksi samaa dataa ei kannata kopioida useaan paikkaan.
+Samalla tutustutaan siihen, miten Flaskin dynaamisessa reitissä voidaan käyttää kokonaislukua:
 
-Tämä valmistaa seuraaviin vaiheisiin, joissa käyttöliittymää kehitetään ja lopulta data siirretään tietokantaan.
+```python
+@app.route("/elokuva/<int:id>")
+```
+
+Tämä valmistaa sovellusta myöhempää SQLite-tietokantaa varten, jossa jokaisella elokuvalla on niin ikään oma id.#
 
 **[Siirry vaiheeseen 07](07/README.md)**
 
