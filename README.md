@@ -460,3 +460,9 @@ Jatka samalla tavalla aina vaiheeseen `10` asti.
 Älä kopioi seuraavan vaiheen koodia etukäteen. Harjoituksen idea on, että sovellus rakennetaan vähitellen ja jokainen uusi käsite perustuu aiemmin opittuun.
 
 Hyvä tavoite on saada jokainen vaihe toimimaan ennen seuraavaan siirtymistä.
+
+# Lisenssi
+
+Tämä kurssi on julkaistu [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) -lisenssillä.
+
+Copyright © Riku Rampanen
